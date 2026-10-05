@@ -1,0 +1,140 @@
+\begin{thebibliography}{18}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Brown et~al.(2020)Brown, Mann, Ryder, Subbiah, Kaplan, Dhariwal,
+  Neelakantan, Shyam, Sastry, Askell, et~al.]{brown2020gpt3}
+Tom Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared~D. Kaplan,
+  Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda
+  Askell, et~al.
+\newblock Language models are few-shot learners.
+\newblock In \emph{Advances in Neural Information Processing Systems}, 2020.
+
+\bibitem[Chan et~al.(2025)Chan, Chowdhury, Jaffe, Aung, Sherburn, Mays,
+  Starace, Liu, Maksin, Patwardhan, Weng, and M{\k{a}}dry]{chan2025mlebench}
+Jun~Shern Chan, Neil Chowdhury, Oliver Jaffe, James Aung, Dane Sherburn, Evan
+  Mays, Giulio Starace, Kevin Liu, Leon Maksin, Tejal Patwardhan, Lilian Weng,
+  and Aleksander M{\k{a}}dry.
+\newblock {MLE-bench}: Evaluating machine learning agents on machine learning
+  engineering.
+\newblock In \emph{International Conference on Learning Representations}, 2025.
+
+\bibitem[Chen et~al.(2023)Chen, Shu, Shareghi, Collier, Narasimhan, and
+  Yao]{chen2023fireact}
+Baian Chen, Chang Shu, Ehsan Shareghi, Nigel Collier, Karthik Narasimhan, and
+  Shunyu Yao.
+\newblock {FireAct}: Toward language agent fine-tuning.
+\newblock \emph{arXiv preprint arXiv:2310.05915}, 2023.
+
+\bibitem[Gupta et~al.(2026)Gupta, Chatterjee, Haas, Tao, Wang, Liu, Oiwa,
+  Gribovskaya, Ackermann, Blitzer, Goldshtein, and Das]{gupta2026deepsearchqa}
+Nikita Gupta, Riju Chatterjee, Lukas Haas, Connie Tao, Andrew Wang, Chang Liu,
+  Hidekazu Oiwa, Elena Gribovskaya, Jan Ackermann, John Blitzer, Sasha
+  Goldshtein, and Dipanjan Das.
+\newblock {DeepSearchQA}: Bridging the comprehensiveness gap for deep research
+  agents.
+\newblock \emph{arXiv preprint arXiv:2601.20975}, 2026.
+
+\bibitem[Jiang et~al.(2025)Jiang, Schmidt, Srikanth, Xu, Kaplan, Jacenko, and
+  Wu]{jiang2025aide}
+Zhengyao Jiang, Dominik Schmidt, Dhruv Srikanth, Dixing Xu, Ian Kaplan, Deniss
+  Jacenko, and Yuxiang Wu.
+\newblock {AIDE}: {AI}-driven exploration in the space of code.
+\newblock \emph{arXiv preprint arXiv:2502.13138}, 2025.
+
+\bibitem[Lu et~al.(2026)Lu, Li, Luo, Zhang, Wang, Xiao, Xiong, Wang, Wang,
+  Jiang, et~al.]{lu2026arex}
+Shuqi Lu, Chaofan Li, Kun Luo, Zhang Zhang, Hui Wang, Hongwang Xiao, Lei Xiong,
+  Jiahao Wang, Sen Wang, Xiyan Jiang, et~al.
+\newblock {AREX}: Towards a recursively self-improving agent for deep research.
+\newblock \emph{arXiv preprint arXiv:2607.21461}, 2026.
+
+\bibitem[Madaan et~al.(2023)Madaan, Tandon, Gupta, Hallinan, Gao, Wiegreffe,
+  Alon, Dziri, Prabhumoye, Yang, et~al.]{madaan2023selfrefine}
+Aman Madaan, Niket Tandon, Prakhar Gupta, Skyler Hallinan, Luyu Gao, Sarah
+  Wiegreffe, Uri Alon, Nouha Dziri, Shrimai Prabhumoye, Yiming Yang, et~al.
+\newblock Self-refine: Iterative refinement with self-feedback.
+\newblock In \emph{Advances in Neural Information Processing Systems}, 2023.
+
+\bibitem[Mang et~al.(2025)Mang, Chai, Li, Mao, Zhou, Du, Li, Liu, Chen, Wang,
+  et~al.]{mang2025frontiercs}
+Qiuyang Mang, Wenhao Chai, Zhifei Li, Huanzhi Mao, Shang Zhou, Alexander Du,
+  Hanchen Li, Shu Liu, Edwin Chen, Yichuan Wang, et~al.
+\newblock {FrontierCS}: Evolving challenges for evolving intelligence.
+\newblock \emph{arXiv preprint arXiv:2512.15699}, 2025.
+
+\bibitem[Mialon et~al.(2023)Mialon, Fourrier, Swift, Wolf, LeCun, and
+  Scialom]{mialon2023gaia}
+Gr{\'e}goire Mialon, Cl{\'e}mentine Fourrier, Craig Swift, Thomas Wolf, Yann
+  LeCun, and Thomas Scialom.
+\newblock {GAIA}: A benchmark for general {AI} assistants.
+\newblock \emph{arXiv preprint arXiv:2311.12983}, 2023.
+
+\bibitem[Packer et~al.(2023)Packer, Wooders, Lin, Fang, Patil, Stoica, and
+  Gonzalez]{packer2023memgpt}
+Charles Packer, Sarah Wooders, Kevin Lin, Vivian Fang, Shishir~G. Patil, Ion
+  Stoica, and Joseph~E. Gonzalez.
+\newblock {MemGPT}: Towards {LLMs} as operating systems.
+\newblock \emph{arXiv preprint arXiv:2310.08560}, 2023.
+
+\bibitem[Phan et~al.(2025)Phan, Gatti, Han, Li, Hu, Zhang, Zhang, Shaaban,
+  Ling, Shi, et~al.]{phan2025hle}
+Long Phan, Alice Gatti, Ziwen Han, Nathaniel Li, Josephina Hu, Hugh Zhang, Chen
+  Bo~Calvin Zhang, Mohamed Shaaban, John Ling, Sean Shi, et~al.
+\newblock Humanity's last exam.
+\newblock \emph{arXiv preprint arXiv:2501.14249}, 2025.
+
+\bibitem[Qian et~al.(2026)Qian, Li, Luo, Wei, Chen, Lu, Hu, Xiao, Wang, Li, Ye,
+  Dou, Lian, and Liu]{qian2026arex2}
+Hongjin Qian, Chaofan Li, Kun Luo, Wenqing Wei, Jianlyu Chen, Shuqi Lu, Yuyang
+  Hu, Hongwang Xiao, Hui Wang, Chaozhuo Li, Qiwei Ye, Zhicheng Dou, Defu Lian,
+  and Zheng Liu.
+\newblock {AREX-2}: Advancing self-improving agents through long-horizon
+  reflective tasks.
+\newblock \emph{arXiv preprint arXiv:2609.38288}, 2026.
+
+\bibitem[{Qwen Team}(2026)]{qwen2026qwen38}
+{Qwen Team}.
+\newblock {Qwen3.8}.
+\newblock \url{https://github.com/QwenLM/Qwen3.8}, 2026.
+
+\bibitem[Shinn et~al.(2023)Shinn, Cassano, Berman, Gopinath, Narasimhan, and
+  Yao]{shinn2023reflexion}
+Noah Shinn, Federico Cassano, Edward Berman, Ashwin Gopinath, Karthik
+  Narasimhan, and Shunyu Yao.
+\newblock Reflexion: Language agents with verbal reinforcement learning.
+\newblock In \emph{Advances in Neural Information Processing Systems}, 2023.
+
+\bibitem[Skalse et~al.(2022)Skalse, Howe, Krasheninnikov, and
+  Krueger]{skalse2022rewardhacking}
+Joar Skalse, Nikolaus H.~R. Howe, Dmitrii Krasheninnikov, and David Krueger.
+\newblock Defining and characterizing reward hacking.
+\newblock In \emph{Advances in Neural Information Processing Systems}, 2022.
+
+\bibitem[Wei et~al.(2025)Wei, Sun, Papay, McKinney, Han, Fulford, Chung,
+  Passos, Fedus, and Glaese]{wei2025browsecomp}
+Jason Wei, Zhiqing Sun, Spencer Papay, Scott McKinney, Jeffrey Han, Isa
+  Fulford, Hyung~Won Chung, Alex~Tachard Passos, William Fedus, and Amelia
+  Glaese.
+\newblock {BrowseComp}: A simple yet challenging benchmark for browsing agents.
+\newblock \emph{arXiv preprint arXiv:2504.12516}, 2025.
+
+\bibitem[Yang et~al.(2024)Yang, Jimenez, Wettig, Lieret, Yao, Narasimhan, and
+  Press]{yang2024sweagent}
+John Yang, Carlos~E. Jimenez, Alexander Wettig, Kilian Lieret, Shunyu Yao,
+  Karthik Narasimhan, and Ofir Press.
+\newblock {SWE-agent}: Agent-computer interfaces enable automated software
+  engineering.
+\newblock In \emph{Advances in Neural Information Processing Systems}, 2024.
+
+\bibitem[Zeng et~al.(2023)Zeng, Liu, Lu, Wang, Liu, Dong, and
+  Tang]{zeng2023agenttuning}
+Aohan Zeng, Mingdao Liu, Rui Lu, Bowen Wang, Xiao Liu, Yuxiao Dong, and Jie
+  Tang.
+\newblock {AgentTuning}: Enabling generalized agent abilities for {LLMs}.
+\newblock \emph{arXiv preprint arXiv:2310.12823}, 2023.
+
+\end{thebibliography}

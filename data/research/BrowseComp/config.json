@@ -1,0 +1,23 @@
+{
+  "name": "BrowseComp",
+  "data_path": "${AREX_DATA_ROOT}/BrowseComp/browse_comp_test_set.csv",
+  "data_format": "csv",
+  "task_type": "qa",
+  "question_field": "problem",
+  "answer_field": "answer",
+  "encrypted": true,
+  "canary_field": "canary",
+  "metadata_fields": [
+    "problem_topic"
+  ],
+  "tools": [
+    "search",
+    "google_scholar",
+    "visit",
+    "finish"
+  ],
+  "scorer": {
+    "type": "browsecomp_official",
+    "source": "inspect_evals/browse_comp official judge + local BrowseComp typo patch"
+  }
+}

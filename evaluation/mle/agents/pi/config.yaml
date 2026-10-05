@@ -1,0 +1,49 @@
+# mle-bench agent registry entries. Copy/symlink this whole directory into
+# <mle-bench>/agents/pi/ and run:  python run_agent.py --agent-id pi --competition-set ...
+vars:
+  time_limit: &time_limit 14400   # 4 hours per competition
+
+defaults: &defaults
+  start: pi/start.sh
+  dockerfile: pi/Dockerfile
+  env_vars: &env_vars
+    TIME_LIMIT_SECS: *time_limit
+    PI_PROVIDER: deepseek
+    PI_MODEL: deepseek-v4-flash
+    PI_THINKING: high
+    PI_CRITERION: medal        # medal | median | none -- see docs/differences.md
+    REFINE_ROUNDS: 0
+    DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+
+# skill-guided, single round -- the headline configuration
+pi:
+  <<: *defaults
+
+# same, but nothing about the grading scale is disclosed to the agent:
+# this is the setting comparable with published MLE-bench numbers
+pi/blind:
+  <<: *defaults
+  env_vars:
+    <<: *env_vars
+    PI_CRITERION: none
+
+# ablation: no task skill, agent designs its own approach
+pi/no-skill:
+  <<: *defaults
+  env_vars:
+    <<: *env_vars
+    PI_NO_SKILL: 1
+
+# two extra refine rounds inside the same wall clock
+pi/refine:
+  <<: *defaults
+  env_vars:
+    <<: *env_vars
+    REFINE_ROUNDS: 2
+
+# short smoke test (20 min) for checking the plumbing
+pi/dev:
+  <<: *defaults
+  env_vars:
+    <<: *env_vars
+    TIME_LIMIT_SECS: 1200

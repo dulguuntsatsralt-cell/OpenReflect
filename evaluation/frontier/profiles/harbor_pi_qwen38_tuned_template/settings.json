@@ -1,0 +1,110 @@
+{
+  "defaultProvider": "sglang-qwen",
+  "defaultModel": "Qwen3.8-27B-BAAI-FT",
+  "defaultThinkingLevel": "max",
+  "quietStartup": true,
+  "retry": {
+    "enabled": true,
+    "maxRetries": 5,
+    "baseDelayMs": 2000,
+    "provider": {
+      "maxRetries": 5,
+      "maxRetryDelayMs": 60000
+    }
+  },
+  "httpIdleTimeoutMs": 600000,
+  "compaction": {
+    "enabled": true
+  },
+  "extensions": [
+    "/root/.pi/extensions/pi-interactive-tasks/index.js",
+    "/root/.pi/extensions/block-benchmark-access.ts"
+  ],
+  "packages": [],
+  "small-model-helper": {
+    "features": {
+      "compaction": true,
+      "summaryRetry": true,
+      "bashTimeout": true,
+      "thinkingBudget": true,
+      "textToolRecovery": true,
+      "argumentRepair": true,
+      "schemaNormalization": true,
+      "errorFormatting": true,
+      "statusUI": false
+    },
+    "compaction": {
+      "maxContinuations": 5,
+      "prompt": "Context compaction has completed. Continue executing the original task autonomously from the compacted context. Inspect the current files and state, then keep using tools; do not merely summarize what remains."
+    },
+    "summaryRetry": {
+      "minChars": 50,
+      "maxRetries": 3
+    },
+    "bashTimeout": {
+      "defaultSeconds": 600,
+      "maxSeconds": 3600
+    },
+    "thinkingBudget": {
+      "maxTokens": 65536,
+      "maxRetries": 3
+    },
+    "recovery": {
+      "maxRecoveries": 3
+    }
+  },
+  "interactive-tasks": {
+    "features": {
+      "requireSubmit": true,
+      "thresholdContinuation": true,
+      "treeJoin": true,
+      "treeJoinFreeExplore": true,
+      "statusUI": false
+    },
+    "treeJoin": {
+      "branches": 4,
+      "mergeAfterSeconds": 7200,
+      "mergeAfterSubmissions": 3,
+      "minExploreSeconds": 3600,
+      "successScoreThreshold": 0.99,
+      "compactionExtraReserveTokens": 8192,
+      "workRoot": "/logs/agent/pi-tree-join",
+      "submitScript": ""
+    },
+    "evaluation": {
+      "method": "regex",
+      "options": {}
+    },
+    "detection": {
+      "invocationRegex": {
+        "source": "^(?:/app/submit\\.sh|(?:\\./)?submit\\.sh|(?:.*/)?environment/submit\\.sh)$",
+        "flags": ""
+      },
+      "feedbackRegex": {
+        "source": "^(?:\\[submit\\]\\s+uuid=(?<uuid>\\S+)\\s*|\\[submit\\]\\s+status=(?<status>\\S+)\\s+score=(?<score>[-+]?(?:\\d+(?:\\.\\d*)?|\\.\\d+)(?:[eE][-+]?\\d+)?)\\s+\\(raw=(?<rawScore>[-+]?(?:\\d+(?:\\.\\d*)?|\\.\\d+)(?:[eE][-+]?\\d+)?)\\s*\\/\\s*100\\)(?:\\s+code_chars=(?<codeChars>\\d+))?\\s*|\\[submit\\]\\s+detail:\\s*(?<detail>.*)|\\[submit\\]\\s+metrics:\\s*(?<metrics>.*)|\\[submit\\]\\s+unbounded=(?<unboundedScore>[-+]?(?:\\d+(?:\\.\\d*)?|\\.\\d+)(?:[eE][-+]?\\d+)?)\\s*)$",
+        "flags": ""
+      },
+      "answerRegex": {
+        "source": "^Artifact:[\\t ]+(?<path>[^\\r\\n]+)$",
+        "flags": "m"
+      },
+      "invocationMode": "shell",
+      "defaultSolutionPath": "/app/solution.cpp",
+      "feedbackMode": "lines"
+    },
+    "prompts": {
+      "continuation": "Continue the original task autonomously with tools. No submit.sh invocation has been observed yet. Do not finish with only a status summary or compilation check; complete the solution and run `bash submit.sh solution.cpp` to submit it.",
+      "finalReminder": "You have not submitted the solution yet. This is the final automatic reminder before the agent is allowed to stop. Run `bash submit.sh solution.cpp` now, inspect the judge result, and keep fixing and resubmitting if needed. Do not finish with another status summary or compilation-only check."
+    },
+    "policy": {
+      "patience": 4,
+      "plateauScoreCeiling": 95,
+      "plateauMaxRewinds": 8,
+      "scoreEpsilon": 0.001,
+      "lowScoreThreshold": 60,
+      "lowScoreMaxRestarts": 3,
+      "requireSubmitMaxContinuations": 10,
+      "snapshotDirectory": ""
+    }
+  }
+}

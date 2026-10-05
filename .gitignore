@@ -1,0 +1,35 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+runs/
+results/
+logs/
+.cache/
+data/files/
+data/algorithmic/problems/
+data/algorithmic/solutions/
+data/algorithmic/submissions/
+data/algorithmic/data/
+data/files/legacy/HLE/*.jsonl
+
+.env.*
+!.env.example
+*.egg-info/
+
+# GitHub Pages copies the repository assets into this directory during CI.
+assets/site/assets/
+
+# OpenReflect
+data/openreflect/
+checkpoints/
+.pytest_cache/
+paper/*.aux
+paper/*.log
+paper/*.blg
+paper/*.out
+paper/*.fls
+paper/*.fdb_latexmk
+paper/png/
+paper/build.log
+paper/*.tar.gz

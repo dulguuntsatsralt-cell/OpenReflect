@@ -1,0 +1,10 @@
+# Extra python packages on top of mle-bench's own environment/requirements.txt.
+#
+# Intentionally EMPTY. Every package the 22 bundled skills import -- torch, torchvision,
+# transformers, timm, lightgbm, albumentations, cv2, librosa, sklearn, scipy, pandas, PIL --
+# is already pinned in the base image, so the benchmark environment stays byte-identical to
+# official MLE-bench and a score from here is comparable.
+#
+# Add a line here only if a skill genuinely needs something the base image lacks, and be aware
+# that pip will happily re-resolve the base image's torch/tensorflow pins around it. Prefer
+# letting the agent install into its own container at runtime (it is allowed to).

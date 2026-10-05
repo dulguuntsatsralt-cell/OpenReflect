@@ -1,0 +1,43 @@
+{
+  "providers": {
+    "sglang-qwen": {
+      "name": "BAAI Qwen3.8-27B-FT",
+      "baseUrl": "http://host.docker.internal:8000/v1",
+      "api": "openai-completions",
+      "apiKey": "$PI_QWEN38_BAAI",
+      "authHeader": true,
+      "headers": {
+        "User-Agent": "pi-coding-agent"
+      },
+      "compat": {
+        "supportsStrictMode": false,
+        "supportsReasoningEffort": false
+      },
+      "models": [
+        {
+          "id": "Qwen3.8-27B-BAAI-FT",
+          "name": "Qwen3.8-27B-BAAI-FT",
+          "reasoning": true,
+          "input": [
+            "text",
+            "image"
+          ],
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "contextWindow": 256000,
+          "maxTokens": 128000,
+          "compat": {
+            "supportsDeveloperRole": false,
+            "supportsStrictMode": false,
+            "maxTokensField": "max_tokens",
+            "thinkingFormat": "qwen-chat-template"
+          }
+        }
+      ]
+    }
+  }
+}

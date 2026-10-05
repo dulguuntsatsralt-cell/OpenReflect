@@ -1,0 +1,178 @@
+{
+  "aerial-cactus-identification": {
+    "thresholds": {
+      "bronze_threshold": 1.0,
+      "gold_threshold": 1.0,
+      "median_threshold": 0.9991,
+      "silver_threshold": 1.0
+    }
+  },
+  "aptos2019-blindness-detection": {
+    "thresholds": {
+      "bronze_threshold": 0.914492,
+      "gold_threshold": 0.930508,
+      "median_threshold": 0.888912,
+      "silver_threshold": 0.919654
+    }
+  },
+  "denoising-dirty-documents": {
+    "thresholds": {
+      "bronze_threshold": 0.04517,
+      "gold_threshold": 0.01794,
+      "median_threshold": 0.07325,
+      "silver_threshold": 0.02609
+    }
+  },
+  "detecting-insults-in-social-commentary": {
+    "thresholds": {
+      "bronze_threshold": 0.79111,
+      "gold_threshold": 0.83321,
+      "median_threshold": 0.77842,
+      "silver_threshold": 0.82307
+    }
+  },
+  "dog-breed-identification": {
+    "thresholds": {
+      "bronze_threshold": 0.04598,
+      "gold_threshold": 0.0005,
+      "median_threshold": 0.47205,
+      "silver_threshold": 0.00539
+    }
+  },
+  "dogs-vs-cats-redux-kernels-edition": {
+    "thresholds": {
+      "bronze_threshold": 0.06127,
+      "gold_threshold": 0.03882,
+      "median_threshold": 0.12216,
+      "silver_threshold": 0.05038
+    }
+  },
+  "histopathologic-cancer-detection": {
+    "thresholds": {
+      "bronze_threshold": 0.9738,
+      "gold_threshold": 0.9835,
+      "median_threshold": 0.9477,
+      "silver_threshold": 0.9798
+    }
+  },
+  "jigsaw-toxic-comment-classification-challenge": {
+    "thresholds": {
+      "bronze_threshold": 0.98639,
+      "gold_threshold": 0.9874,
+      "median_threshold": 0.98079,
+      "silver_threshold": 0.98668
+    }
+  },
+  "leaf-classification": {
+    "thresholds": {
+      "bronze_threshold": 0.01526,
+      "gold_threshold": 0.0,
+      "median_threshold": 0.108345,
+      "silver_threshold": 0.00791
+    }
+  },
+  "mlsp-2013-birds": {
+    "thresholds": {
+      "bronze_threshold": 0.87372,
+      "gold_threshold": 0.93527,
+      "median_threshold": 0.86572,
+      "silver_threshold": 0.90038
+    }
+  },
+  "new-york-city-taxi-fare-prediction": {
+    "thresholds": {
+      "bronze_threshold": 2.92371,
+      "gold_threshold": 2.83377,
+      "median_threshold": 3.59741,
+      "silver_threshold": 2.88191
+    }
+  },
+  "nomad2018-predict-transparent-conductors": {
+    "thresholds": {
+      "bronze_threshold": 0.06582,
+      "gold_threshold": 0.05589,
+      "median_threshold": 0.06988,
+      "silver_threshold": 0.06229
+    }
+  },
+  "plant-pathology-2020-fgvc7": {
+    "thresholds": {
+      "bronze_threshold": 0.97361,
+      "gold_threshold": 0.97836,
+      "median_threshold": 0.94852,
+      "silver_threshold": 0.97465
+    }
+  },
+  "random-acts-of-pizza": {
+    "thresholds": {
+      "bronze_threshold": 0.6921,
+      "gold_threshold": 0.97908,
+      "median_threshold": 0.5995950000000001,
+      "silver_threshold": 0.76482
+    }
+  },
+  "ranzcr-clip-catheter-line-classification": {
+    "thresholds": {
+      "bronze_threshold": 0.9709,
+      "gold_threshold": 0.97357,
+      "median_threshold": 0.9675,
+      "silver_threshold": 0.97152
+    }
+  },
+  "siim-isic-melanoma-classification": {
+    "thresholds": {
+      "bronze_threshold": 0.937,
+      "gold_threshold": 0.9455,
+      "median_threshold": 0.9128,
+      "silver_threshold": 0.9401
+    }
+  },
+  "spooky-author-identification": {
+    "thresholds": {
+      "bronze_threshold": 0.29381,
+      "gold_threshold": 0.16506,
+      "median_threshold": 0.418785,
+      "silver_threshold": 0.26996
+    }
+  },
+  "tabular-playground-series-dec-2021": {
+    "thresholds": {
+      "bronze_threshold": 0.95658,
+      "gold_threshold": 0.9566,
+      "median_threshold": 0.95342,
+      "silver_threshold": 0.95658
+    }
+  },
+  "tabular-playground-series-may-2022": {
+    "thresholds": {
+      "bronze_threshold": 0.99818,
+      "gold_threshold": 0.99823,
+      "median_threshold": 0.972675,
+      "silver_threshold": 0.99822
+    }
+  },
+  "text-normalization-challenge-english-language": {
+    "thresholds": {
+      "bronze_threshold": 0.99038,
+      "gold_threshold": 0.99724,
+      "median_threshold": 0.99037,
+      "silver_threshold": 0.99135
+    }
+  },
+  "text-normalization-challenge-russian-language": {
+    "thresholds": {
+      "bronze_threshold": 0.97592,
+      "gold_threshold": 0.99012,
+      "median_threshold": 0.97591,
+      "silver_threshold": 0.98232
+    }
+  },
+  "the-icml-2013-whale-challenge-right-whale-redux": {
+    "thresholds": {
+      "bronze_threshold": 0.90521,
+      "gold_threshold": 0.98961,
+      "median_threshold": 0.86521,
+      "silver_threshold": 0.95017
+    }
+  }
+}

@@ -1,0 +1,5 @@
+[project]
+name = "frontier-cs-vendor"
+version = "0.0.0"
+requires-python = ">=3.10"
+dependencies = ["pyyaml", "requests", "openai", "anthropic", "datasets", "tqdm"]

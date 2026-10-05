@@ -1,0 +1,26 @@
+{
+  "name": "GAIA-2023-validation-text-103",
+  "data_path": "${AREX_DATA_ROOT}/GAIA-2023-validation-text-103/standardized_data.jsonl",
+  "data_format": "jsonl",
+  "task_type": "qa",
+  "question_field": "task_question",
+  "answer_field": "ground_truth",
+  "id_field": "task_id",
+  "metadata_fields": [
+    "Level",
+    "metadata",
+    "file_name",
+    "file_path"
+  ],
+  "attachments_root": "${AREX_DATA_ROOT}/GAIA-2023-validation-text-103",
+  "tools": [
+    "search",
+    "google_scholar",
+    "visit",
+    "finish"
+  ],
+  "scorer": {
+    "type": "gaia_text_103_judge",
+    "source": "MiroThinker gaia-validation-text-103 benchmark style; WebAgent LLM-as-judge rubric"
+  }
+}

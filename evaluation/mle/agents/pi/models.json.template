@@ -1,0 +1,30 @@
+{
+  "_comment": [
+    "Extra providers/models for the pi CLI, copied to ~/.pi/agent/models.json at container start.",
+    "pi ships built-in support for the common hosted providers (--provider deepseek / anthropic /",
+    "openai / ...), so you only need entries here for a self-hosted or non-default endpoint --",
+    "for example your own vLLM/SGLang server, which is how you would evaluate a fine-tuned model.",
+    "apiKey values are $VAR references expanded from the container environment at request time,",
+    "so never paste a literal key into this file."
+  ],
+  "providers": {
+    "custom-openai": {
+      "baseUrl": "$CUSTOM_BASE_URL",
+      "api": "openai-completions",
+      "apiKey": "$CUSTOM_API_KEY",
+      "models": [
+        {
+          "id": "$CUSTOM_MODEL_ID",
+          "name": "custom OpenAI-compatible endpoint",
+          "reasoning": true,
+          "contextWindow": 262144,
+          "maxTokens": 32768,
+          "compat": {
+            "supportsDeveloperRole": false,
+            "maxTokensField": "max_tokens"
+          }
+        }
+      ]
+    }
+  }
+}

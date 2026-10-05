@@ -1,0 +1,33 @@
+{
+  "name": "HLE",
+  "data_path": "${AREX_DATA_ROOT}/HLE/text_items.jsonl",
+  "data_format": "jsonl",
+  "evaluation_backend": "hle",
+  "tools": [
+    "search",
+    "google_scholar",
+    "visit",
+    "update_context",
+    "code_interpreter",
+    "finish"
+  ],
+  "task_type": "qa_multimodal",
+  "question_field": "question",
+  "answer_field": "answer",
+  "id_field": "id",
+  "exclude_image_rows": true,
+  "metadata_fields": [
+    "answer_type",
+    "author_name",
+    "rationale",
+    "raw_subject",
+    "category",
+    "canary",
+    "image"
+  ],
+  "attachments_root": "${AREX_DATA_ROOT}/HLE",
+  "scorer": {
+    "type": "hle_official",
+    "source": "HLE judge adapter"
+  }
+}

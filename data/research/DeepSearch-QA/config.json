@@ -1,0 +1,16 @@
+{
+  "name": "DeepSearch-QA",
+  "data_path": "${AREX_DATA_ROOT}/DeepSearch-QA/DSQA-full.csv",
+  "data_format": "csv",
+  "task_type": "qa",
+  "question_field": "problem",
+  "answer_field": "answer",
+  "metadata_fields": [
+    "problem_category",
+    "answer_type"
+  ],
+  "scorer": {
+    "type": "deepsearchqa_official",
+    "source": "DeepSearchQA README official Gemini autorater prompt style"
+  }
+}

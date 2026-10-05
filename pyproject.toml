@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "arex-evaluation-suite"
+version = "0.1.0"
+description = "AREX-2 evaluation suite plus OpenReflect: a fully specified recipe for training long-horizon self-improving agents"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.urls]
+Homepage = "https://vectorspacelab.github.io/AREX-2/"
+Repository = "https://github.com/545999961/ax2"
+
+[project.optional-dependencies]
+openreflect = ["pyyaml", "openai"]
+openreflect-train = ["pyyaml", "openai", "torch", "transformers>=4.46", "accelerate", "deepspeed"]
+dev = ["pyyaml", "pytest"]
+research = ["openai", "httpx", "requests", "pandas", "pyarrow", "huggingface_hub", "pillow", "pypdf", "rich", "transformers"]
+frontier = ["pyyaml", "requests", "openai", "anthropic", "datasets", "tqdm"]
+all = ["openai", "httpx", "requests", "pandas", "pyarrow", "huggingface_hub", "pillow", "pypdf", "rich", "transformers", "pyyaml", "anthropic", "datasets", "tqdm"]
+
+[project.scripts]
+arex = "arex_eval.cli:main"
+openreflect = "openreflect.cli:main"
+
+# arex_eval (upstream AREX-2 evaluation) lives in evaluation/; openreflect lives in src/.
+[tool.setuptools.package-dir]
+arex_eval = "evaluation/arex_eval"
+openreflect = "src/openreflect"
+
+[tool.setuptools]
+packages = [
+  "arex_eval", "arex_eval.backends",
+  "openreflect", "openreflect.envs", "openreflect.scaffold", "openreflect.palm",
+  "openreflect.selection", "openreflect.train", "openreflect.metrics",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

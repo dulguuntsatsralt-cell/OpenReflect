@@ -1,0 +1,47 @@
+{
+  "providers": {
+    "deepseek-official": {
+      "name": "DeepSeek Official",
+      "baseUrl": "https://api.deepseek.com/anthropic",
+      "api": "anthropic-messages",
+      "apiKey": "$DEEPSEEK_API_KEY",
+      "headers": {
+        "User-Agent": "pi-coding-agent"
+      },
+      "compat": {
+        "supportsEagerToolInputStreaming": false,
+        "supportsLongCacheRetention": false,
+        "supportsCacheControlOnTools": false,
+        "supportsStrictTools": false
+      },
+      "models": [
+        {
+          "id": "deepseek-flash",
+          "name": "DeepSeek V4.1 Flash (Official, 1M)",
+          "reasoning": true,
+          "input": [
+            "text",
+            "image"
+          ],
+          "contextWindow": 256000,
+          "maxTokens": 128000,
+          "thinkingLevelMap": {
+            "off": null,
+            "minimal": "minimal",
+            "low": "low",
+            "medium": "medium",
+            "high": "high",
+            "xhigh": "xhigh",
+            "max": "max"
+          },
+          "cost": {
+            "input": 0.3,
+            "output": 1.2,
+            "cacheRead": 0.006,
+            "cacheWrite": 0
+          }
+        }
+      ]
+    }
+  }
+}

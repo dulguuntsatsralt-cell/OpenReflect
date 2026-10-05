@@ -1,0 +1,11 @@
+{
+  "defaultProvider": "deepseek-official",
+  "defaultModel": "deepseek-flash",
+  "compaction": {
+    "enabled": false
+  },
+  "extensions": [
+    "/root/.pi/extensions/block-benchmark-access.ts"
+  ],
+  "packages": []
+}

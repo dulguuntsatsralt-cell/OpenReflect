@@ -1,0 +1,55 @@
+{
+  "BrowseComp": {
+    "aliases": [
+      "browsecomp"
+    ],
+    "path": "BrowseComp/browse_comp_test_set.csv",
+    "legacy_path": "data/files/legacy/BrowseComp/browse_comp_test_set.csv",
+    "kind": "csv",
+    "url": "https://openaipublic.blob.core.windows.net/simple-evals/browse_comp_test_set.csv",
+    "columns": [
+      "problem",
+      "answer",
+      "canary"
+    ],
+    "source": "https://github.com/openai/simple-evals/blob/main/browsecomp_eval.py"
+  },
+  "DeepSearch-QA": {
+    "aliases": [
+      "deepsearchqa",
+      "dsqa"
+    ],
+    "path": "DeepSearch-QA/DSQA-full.csv",
+    "legacy_path": "data/files/legacy/DeepSearch-QA/DSQA-full.csv",
+    "kind": "csv",
+    "url": "https://huggingface.co/datasets/google/deepsearchqa/resolve/main/DSQA-full.csv",
+    "columns": [
+      "problem",
+      "answer"
+    ],
+    "source": "https://huggingface.co/datasets/google/deepsearchqa"
+  },
+  "HLE": {
+    "aliases": [
+      "hle"
+    ],
+    "path": "HLE/text_items.jsonl",
+    "legacy_path": "data/files/legacy/HLE/text_items.jsonl",
+    "kind": "hle",
+    "hf_repo": "cais/hle",
+    "hf_file": "data/test-00000-of-00001.parquet",
+    "source": "https://huggingface.co/datasets/cais/hle"
+  },
+  "GAIA-2023-validation-text-103": {
+    "aliases": [
+      "gaia",
+      "gaia-text-103"
+    ],
+    "path": "GAIA-2023-validation-text-103/standardized_data.jsonl",
+    "legacy_path": "data/files/legacy/GAIA-2023-validation-text-103/standardized_data.jsonl",
+    "kind": "gaia",
+    "hf_repo": "gaia-benchmark/GAIA",
+    "hf_file": "2023/validation/metadata.parquet",
+    "source": "https://huggingface.co/datasets/gaia-benchmark/GAIA"
+  }
+}

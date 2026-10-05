@@ -1,0 +1,19 @@
+OpenReflect
+Copyright 2026 Dulguun Enkhtsatsral
+
+This product is a fork of AREX-2 (https://github.com/VectorSpaceLab/AREX-2),
+licensed under the Apache License, Version 2.0. Upstream third-party notices are in
+THIRD_PARTY_NOTICES.md.
+
+Modifications to upstream files:
+- README.md: OpenReflect section added at the top; upstream content kept below it
+  (the upstream logo header was removed so the fork is not presented as the AREX team's work).
+- pyproject.toml, setup.py: package the new `openreflect` package next to `arex_eval`;
+  new optional dependency groups `openreflect`, `openreflect-train`, `dev`; pytest config.
+- .gitignore: OpenReflect data and checkpoint directories.
+- .github/workflows/openreflect-tests.yml: new CI workflow for OpenReflect tests.
+
+New files (OpenReflect): src/openreflect/, configs/openreflect/, scripts/openreflect/,
+tests/openreflect/, docs/openreflect/, paper/, NOTICE.
+
+All other upstream files are unchanged.
