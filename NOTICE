@@ -20,3 +20,5 @@ All other upstream files are unchanged.
 - .github/workflows/pages.yml, static.yml: removed (they deployed the upstream AREX-2 homepage).
 - README.md rewritten around OpenReflect; the upstream evaluation guide moved to docs/evaluation/AREX2_EVALUATION.md.
 - README.zh-CN.md, docs/evaluation/*.zh-CN.md: removed.
+- README.md rewritten around OpenReflect; the upstream evaluation guide moved to docs/evaluation/AREX2_EVALUATION.md.
+- README.zh-CN.md, docs/evaluation/*.zh-CN.md: removed.
