@@ -17,3 +17,4 @@ New files (OpenReflect): src/openreflect/, configs/openreflect/, scripts/openref
 tests/openreflect/, docs/openreflect/, paper/, NOTICE.
 
 All other upstream files are unchanged.
+- .github/workflows/pages.yml, static.yml: removed (they deployed the upstream AREX-2 homepage).
